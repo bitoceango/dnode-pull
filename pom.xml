@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.tiyxing.rpc</groupId>
+  <artifactId>dnode-java</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>dnode-protocol</module>
+    <module>dnode-core</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <name>dnode-java</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jackson-datatype.version>2.8.7</jackson-datatype.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.16</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.29</version>
+    </dependency>
+
+    <!-- test -->
+    <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zmannotes.event</groupId>
+      <artifactId>event-emitter</artifactId>
+      <version>0.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zmannotes.stream</groupId>
+      <artifactId>pull-stream</artifactId>
+      <version>2.7.6-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zmannotes</groupId>
+      <artifactId>multiplex-pull</artifactId>
+      <version>2.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.8.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zmannotes</groupId>
+      <artifactId>netty-pull</artifactId>
+      <version>2.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zmannotes</groupId>
+      <artifactId>socket-pull</artifactId>
+      <version>2.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.6</version>
+    </dependency>
+  </dependencies>
+</project>
